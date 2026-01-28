@@ -229,7 +229,7 @@ const ProjectDescription: React.FC<ProjectDescriptionProps> = ({
                     transition={{ duration: 0.3 }}
                   >
                     <div className="overflow-hidden border-2 sm:border-4 border-current">
-                      <img
+                      <Image
                         src={block.url || ""}
                         alt={block.caption || "Project image"}
                         width={883}
