@@ -90,7 +90,13 @@ export default function HomeSection() {
             return (
               <button
                 key={index}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => {
+                  setActiveIndex(index);
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
                 className={`
     relative pb-1.5 text-sm font-medium tracking-tight
     after:absolute after:bottom-0 after:left-1/2 after:h-0.5 
