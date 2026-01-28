@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* Light mode underline */
+.contact-btn.light::after {
+  background-color: black;
+}
+
+/* Dark mode underline */
+.contact-btn.dark::after {
+  background-color: white;
+}
+
+.contact-btn:hover::after {
+  width: 100%;
+}
+
+.font-epilogue {
+  font-family: "Epilogue", sans-serif;
+}
+
+.font-great {
+  font-family: "Great Vibes", cursive;
+}
