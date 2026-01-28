@@ -290,7 +290,7 @@ const ProjectDescription: React.FC<ProjectDescriptionProps> = ({
                 text-center duration-300
               `}
             >
-              <h3
+              <p
                 className={`
                   text-2xl sm:text-3xl font-serif font-bold mb-3 sm:mb-4
                   ${dark ? "text-white" : "text-black"}
@@ -298,7 +298,7 @@ const ProjectDescription: React.FC<ProjectDescriptionProps> = ({
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 Explore This Project
-              </h3>
+              </p>
               <p
                 className={`
                   text-base sm:text-lg mb-4 sm:mb-6 font-serif
